@@ -1,0 +1,15 @@
+javaScripProfesional/.cache
+javaScripProfesional/dist
+javaScripProfesional/node_modules
+javaScripProfesional/files
+paquetesNpm/node_modules
+paquetesNpm/commands.png
+reactPro/build
+reactPro/node_modules
+reactPro/public/favicon.ico
+reactPro/public/react-icons.svg
+reactPro/src/assets/
+webpack/node_modules
+webpack/build
+webpack/dist
+webpack/src/assets

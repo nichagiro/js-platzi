@@ -1,0 +1,19 @@
+{
+  "name": "faker-overweb",
+  "version": "1.0.0",
+  "description": "Datos en random",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curso",
+    "platzi",
+    "datos de prueba"
+  ],
+  "author": "Nicolas Chamorro",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

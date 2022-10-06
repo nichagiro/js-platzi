@@ -1,0 +1,16 @@
+{
+    "short_name": "React PRO",
+    "name": "Curso de react para gente profeta",
+    "icons": [
+        {
+            "src": "react-icons.svg",
+            "sizes": "600x600",
+            "type": "image/ico"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#222",
+    "theme_color": "#222",
+    "orientation": "portrait", 
+    "display": "standalone"
+}

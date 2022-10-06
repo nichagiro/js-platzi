@@ -1,0 +1,24 @@
+{
+  "name": "professional-js",
+  "version": "1.0.0",
+  "description": "Prueba de js profesional curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel typescript/**/*.html"
+  },
+  "keywords": [],
+  "author": "Nicolas Chamorro",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.2",
+    "parcel-bundler": "^1.12.5",
+    "random-hub": "^1.0.0"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
