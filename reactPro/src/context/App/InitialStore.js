@@ -1,5 +1,5 @@
 const initialStore = {
-    user: null,
+    user: {},
 }
 
 export default initialStore;

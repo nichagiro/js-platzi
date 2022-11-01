@@ -5,11 +5,12 @@
   "private": true,
   "homepage": "/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress open",
+    "cypress": "cypress run --browser chrome",
     "build": "webpack --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
     "serve": "node server.js",
-    "view" : "serve build/index.html"
+    "view": "serve build/index.html"
   },
   "keywords": [
     "Curso react profesional platzi"
@@ -23,6 +24,7 @@
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
+    "cypress": "^10.10.0",
     "eslint": "^8.23.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",

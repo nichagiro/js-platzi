@@ -46,32 +46,32 @@ module.exports = {
                 },
             ],
         }),
-        new WebpackPwaManifest({
-            filename: "manifest.json",
-            start_url: "index.html",
-            display: "fullscreen",
-            orientation: "portrait",
-            display: "standalone",
-            start_url: ".",
-            inject: true,
-            name: 'REACT PROFESSIONAL',
-            short_name: 'reactPRO',
-            description: 'Curso de react en platzi',
-            background_color: '#ffffff',
-            theme_color: '#ee1515',
-            icons: [
-                {
-                    src: path.resolve('src/assets/pokeball.png'),
-                    sizes: [96, 128, 192, 256, 384, 512],
-                    destination: 'assets/'
-                },
-            ]
-        }),
-        new WorkboxPlugin.GenerateSW({
-            clientsClaim: true,
-            skipWaiting: true,
+        // new WebpackPwaManifest({
+        //     filename: "manifest.json",
+        //     start_url: "index.html",
+        //     display: "fullscreen",
+        //     orientation: "portrait",
+        //     display: "standalone",
+        //     start_url: ".",
+        //     inject: true,
+        //     name: 'REACT PROFESSIONAL',
+        //     short_name: 'reactPRO',
+        //     description: 'Curso de react en platzi',
+        //     background_color: '#ffffff',
+        //     theme_color: '#ee1515',
+        //     icons: [
+        //         {
+        //             src: path.resolve('src/assets/pokeball.png'),
+        //             sizes: [96, 128, 192, 256, 384, 512],
+        //             destination: 'assets/'
+        //         },
+        //     ]
+        // }),
+        // new WorkboxPlugin.GenerateSW({
+        //     clientsClaim: true,
+        //     skipWaiting: true,
             
-        }),
+        // }),
     ],
     optimization: {
         minimize: true,
