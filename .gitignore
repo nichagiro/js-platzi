@@ -13,3 +13,14 @@ webpack/node_modules
 webpack/build
 webpack/dist
 webpack/src/assets
+next/public/assets
+next/node_modules
+next/out
+pwa/node_modules
+pwa/build
+pwa/dist
+pwa/src/assets
+pwa/public/favicon.jpg
+
+pwa/package-lock.json
+pwa/public/images

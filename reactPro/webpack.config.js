@@ -46,32 +46,56 @@ module.exports = {
                 },
             ],
         }),
-        // new WebpackPwaManifest({
-        //     filename: "manifest.json",
-        //     start_url: "index.html",
-        //     display: "fullscreen",
-        //     orientation: "portrait",
-        //     display: "standalone",
-        //     start_url: ".",
-        //     inject: true,
-        //     name: 'REACT PROFESSIONAL',
-        //     short_name: 'reactPRO',
-        //     description: 'Curso de react en platzi',
-        //     background_color: '#ffffff',
-        //     theme_color: '#ee1515',
-        //     icons: [
-        //         {
-        //             src: path.resolve('src/assets/pokeball.png'),
-        //             sizes: [96, 128, 192, 256, 384, 512],
-        //             destination: 'assets/'
-        //         },
-        //     ]
-        // }),
+        new WebpackPwaManifest({
+            filename: "manifest.json",
+            display: "fullscreen",
+            orientation: "portrait",
+            display: "standalone",
+            start_url: ".",
+            inject: true,
+            name: 'REACT PROFESSIONAL',
+            short_name: 'reactPRO',
+            description: 'Curso de react en platzi',
+            background_color: '#ffffff',
+            theme_color: '#ee1515',
+            icons: [
+                {
+                    src: path.resolve('src/assets/overweb.png'),
+                    sizes: [96, 128, 192, 256, 384, 512],
+                    destination: 'assets/'
+                },
+            ]
+        }),
+        new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true
+        }),
         // new WorkboxPlugin.GenerateSW({
+        //     swDest: 'service-worker.js',
         //     clientsClaim: true,
         //     skipWaiting: true,
-            
-        // }),
+        //     maximumFileSizeToCacheInBytes: 5000000,
+        //     runtimeCaching: [
+        //         {
+        //             urlPattern: new RegExp(
+        //                 'https://(res.cloudinary.com|images.unsplash.com)'
+        //             ),
+        //             handler: 'CacheFirst',
+        //             options: {
+        //                 cacheName: 'images'
+        //             }
+        //         },
+        //         {
+        //             urlPattern: new RegExp(
+        //                 'https://silnose-petgram-server-qjokcp6y2.vercel.app'
+        //             ),
+        //             handler: 'NetworkFirst',
+        //             options: {
+        //                 cacheName: 'api'
+        //             }
+        //         }
+        //     ]
+        // })
     ],
     optimization: {
         minimize: true,
