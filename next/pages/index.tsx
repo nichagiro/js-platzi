@@ -20,16 +20,13 @@ export async function getStaticProps() {
   return { props: { data: results } }
 }
 
+
 export default function Home({ data }: any) {
-  const [caracters, setCaracters] = useState<Caracter[]>([]);
-
-  useEffect(() => setCaracters(data), [])
-
   return (
     <Layout >
       <Suspense fallback={`Loading...`}>
         <div className='row g-3 text-center w-100 px-5 py-3'>
-          {caracters.map(item =>
+          {data.map((item: any) =>
             <Link href={`caracters/${item.id}`} key={item.name} className="col" style={{ cursor: 'pointer' }}>
               <CaracterCard  {...item} />
             </Link>

@@ -39,14 +39,14 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCss(),
-        new CopyPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, "public", "favicon.ico"),
-                    to: "favicon.ico"
-                },
-            ],
-        })
+        // new CopyPlugin({
+        //     patterns: [
+        //         {
+        //             from: path.resolve(__dirname, "public", "favicon.ico"),
+        //             to: "favicon.ico"
+        //         },
+        //     ],
+        // })
     ],
     optimization: {
         minimize: false,

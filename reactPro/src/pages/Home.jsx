@@ -9,6 +9,7 @@ import Favorites from '@components/home/Favorites';
 import types from '@context/personajes/Types';
 import { useDispatch, useStore } from '@context/personajes/Provider';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
 
 const Home = () => {
     const [search, setSearch] = useState('');
@@ -17,7 +18,9 @@ const Home = () => {
     const { personajes } = useStore();
 
     useEffect(() => {
-        getData();
+        // getData();
+        axios.get('http://localhost:3001/articulo')
+
     }, []);
 
     const getData = async () => {
@@ -33,6 +36,7 @@ const Home = () => {
             person => person.name.toLowerCase().includes(search.toLowerCase())
         ), [search, personajes]
     );
+
 
     return (
         <>

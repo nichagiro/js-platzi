@@ -8,7 +8,6 @@ const Search = (props) => {
 
     useEffect(() => {
         props.setSearch(data);
-        console.log("🚀 ~ file: Search.jsx:11 ~ useEffect ~ data", data)
     }, [data])
 
     const handleChange = useCallback((e) => setSearch(e.target.value), [])
