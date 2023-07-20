@@ -9,6 +9,7 @@ reactPro/node_modules
 reactPro/public/favicon.ico
 reactPro/public/react-icons.svg
 reactPro/src/assets/
+reactPro/storybook-static/
 webpack/node_modules
 webpack/build
 webpack/dist

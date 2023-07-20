@@ -1,21 +1,36 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Link = (props) => {
-    return (
-        <div className={props.container}>
-            <a
-                href="#!"
-                className={`text-decoration-none fw-bold link-${props.color} ${props.className}`}
-            >
-                {props.label}
-            </a>
-        </div>
-    )
+/** ** Texto con con dirección URL */
+const Link = ({ container, color, className, label, href }) => {
+  return (
+    <div className={container}>
+      <a
+        href={href}
+        className={`text-decoration-none fw-bold link-${color} ${className}`}
+      >
+        {label}
+      </a>
+    </div>
+  )
 }
 
-export default Link
+export default Link;
+
+Link.propTypes = {
+  /** ** Texto a mostrar en el enlace URL */
+  label: PropTypes.string,
+  /** ** Url de la ruta a navegar */
+  href: PropTypes.string,
+  /** ** Clase de bootstrap que recibe el color de fondo */
+  color: PropTypes.oneOf(["dark", "danger", "info", "primary", "secondary", "warning"]),
+  /** ** Añade clase personalizada al elemento */
+  className: PropTypes.string,
+}
 
 Link.defaultProps = {
-    href: '#!',
-    color: 'dark'
+  label: "",
+  href: '#!',
+  color: 'dark',
+  className: ""
 }
